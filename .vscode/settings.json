@@ -1,3 +1,6 @@
 {
-    "eslint.workingDirectories": ["rhytune-gadget-vue"],
+    "eslint.workingDirectories": [
+        "rhytune-gadget-vue"
+    ],
+    "vetur.validation.template": false,
 }

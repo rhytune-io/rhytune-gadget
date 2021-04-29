@@ -1,7 +1,7 @@
 <template lang="pug">
   a.menu
     //- pre {{ menu }}
-    span.menu_btn 测试
+    span.menu_btn {{ title }}
     ul.menu_list
       slot
 </template>
@@ -11,7 +11,7 @@
 export default {
   name: 'Menu',
   props: {
-    menu: String,
+    title: String,
   },
   methods: {
     alertAction(item) {
@@ -37,6 +37,7 @@ export default {
   .menu_btn
     background #ddd
   ul.menu_list
+    background #fff
     display none
     border 1px solid #ddd
     box-shadow 0 0 3px #ddd
@@ -46,8 +47,4 @@ export default {
     margin 0
     padding 0
     min-width 100px
-    li
-      list-style none
-      padding 0
-      margin 0
 </style>
