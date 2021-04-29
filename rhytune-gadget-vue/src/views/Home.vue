@@ -6,7 +6,11 @@
         MenuItem(id="2",title="测试2",@click.native="alertMethod")
     hr
     div 正式区
-      Langs
+      div.top
+        Langs
+        Sources
+      div.out
+        Output
 </template>
 
 <script>
@@ -15,6 +19,8 @@
 import Menu from '@/components/Menu.vue';
 import MenuItem from '@/components/MenuItem.vue';
 import Langs from '@/components/Langs.vue';
+import Sources from '@/components/Sources.vue';
+import Output from '@/components/Output.vue';
 
 export default {
   name: 'Home',
@@ -22,6 +28,8 @@ export default {
     Menu,
     MenuItem,
     Langs,
+    Sources,
+    Output,
   },
   computed: {
   },
@@ -32,3 +40,8 @@ export default {
   },
 };
 </script>
+
+<style lang="stylus" scoped>
+.top
+  display flex
+</style>

@@ -21,14 +21,6 @@ div.langs
         div.list-group-item(
           class="dragItem"
           v-for="lang in this.$store.state.langs.list",:key="lang.id") {{ lang.name }}
-    draggable.dragArea.list-group(
-      v-model="langDropList"
-      group="people"
-      @change="log"
-    )
-        div.list-group-item(
-          class="dragItem"
-          v-for="lang in this.$store.state.langs.listDrop",:key="lang.id") {{ lang.name }}
 </template>
 
 <script>
